@@ -1,5 +1,5 @@
 # variant-of-CPPN-GAN
-based on https://github.com/kwj2104/CPPN-WGAN, but on chineses fonts and improved architecture. You need pytorch to run it.
+based on https://github.com/kwj2104/CPPN-WGAN, but with chineses fonts and improved architecture.
 
 <div align="center">
   <img src="generated_img/samples_chines21_disp9_64x64.png" alt="results for chinese fonts"/>
@@ -10,10 +10,6 @@ based on https://github.com/kwj2104/CPPN-WGAN, but on chineses fonts and improve
 
 <div align="center">
   <img src="generated_img/large_sample_chines21_samp60_256x256.png" alt="enlarged image"/>
-</div>
-
-<div align="center">
-<img src = "https://media.giphy.com/media/w78wltsYMlHjQVik00/giphy.gif" alt="interpolation"/>
 </div>
 
 
