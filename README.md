@@ -13,7 +13,7 @@ based on https://github.com/kwj2104/CPPN-WGAN, but on chineses fonts and improve
 </div>
 
 <div align="center">
-<img src = https://media.giphy.com/media/w78wltsYMlHjQVik00/giphy.gif" alt="interpolation"/>
+<img src = "https://media.giphy.com/media/w78wltsYMlHjQVik00/giphy.gif" alt="interpolation"/>
 </div>
 
 
