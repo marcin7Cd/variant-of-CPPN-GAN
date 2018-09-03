@@ -158,6 +158,6 @@ if __name__ == "__main__":
     
     G = mnist.Generator(x_dim = 28, y_dim = 28, z_dim=LATENT_DIM, batch_size = BATCH_SIZE)
     interpolate("tmp\\mnist\\G-cppn-wgan_3000.pth", G,
-                preview=False, large_sample=False, 
-                interpolate=True, disp_size=10,
+                preview=True, large_sample=False, 
+                interpolate=False, disp_size = 10,
                 large_dim=64, samples=[13, 9, 5, 1, 20])
