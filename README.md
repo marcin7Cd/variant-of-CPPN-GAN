@@ -1,13 +1,22 @@
 # variant-of-CPPN-GAN
 based on https://github.com/kwj2104/CPPN-WGAN, but on chineses fonts and improved architecture. You need pytorch to run it.
 
-the fonts can be download from https://www.kaggle.com/dylanli/chinesecharacter. You just have to put them in file fonts. To generate images you have to execute script chinese.py by default it will generate 8k 64x64 images. 
+<div align="center">
+  <img src="generated_img/samples_chines21_disp9_64x64.png" alt="results for chinese fonts"/>
+</div>
+<div align="center">
+  <img src="generated_img/samples_temp1.png" alt="results for MNIST"/>
+</div>
+
+<div align="center">
+  <img src="generated_img/large_sample_chines21_samp60_256x256.png" alt="enlarged image"/>
+</div>
 
 ## Interpolation
 to interpolate you run interpolator_casia.py. You may change in main which samples are displayed, size of images and size of grid of images. By default it takes 21st(last) generator from tmp\chinese where generators from different stages of my training are stored.
 
 ## Training
-To train you execute gan_cppn_chinese.py script. The periodical image samples, checkpoint and graphs of losses will be saved by default in file tmp/chinese_current. It should give interesting results fairly quickly. From experience the longer you run the variety of samples increases. You may want to decreas learning rate further in training. The generator checkpoints of my run are saved in file tmp/chinese you may look at them for comparison(use interpolator_chinese).
+Before training you have to download fonts from https://www.kaggle.com/dylanli/chinesecharacter. and put them in file fonts. Then execute script chinese.py To generate images by default it will generate 8k 64x64 images. The periodical image samples, checkpoint and graphs of losses will be saved by default in file tmp/chinese_current. To train you execute gan_cppn_chinese.py script. It should give interesting results fairly quickly. From experience the longer you run the variety of samples increases. You may want to decreas learning rate further in training. The generator checkpoints of my run are saved in file tmp/chinese you may look at them for comparison(use interpolator_chinese).
 
 ## MNIST Dataset
 There are also analogous scripts for mnist dataset. They run on little bit less complex architecture. The scripts gan_cppn_mnist3.py and interpolator_mnist3.py are a experiment with additional one_hot vector noise to force a generator to use a discrete variables, which are used to learn categories in a unsupervised way. The generator learned most classes of digits, but got confused about two types of 4's and was forced to put 2 and 3 in the same category. The one_hot representation during traning made a possibility of mixing two categories of digits, which is in interpolation from interpolator_mnist3.py.     
