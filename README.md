@@ -12,6 +12,11 @@ based on https://github.com/kwj2104/CPPN-WGAN, but on chineses fonts and improve
   <img src="generated_img/large_sample_chines21_samp60_256x256.png" alt="enlarged image"/>
 </div>
 
+<div align="center">
+<iframe src="https://drive.google.com/file/d/1fo9VEd7-fEWT1LKrH5Yh6m_otV2IOlmJ/preview" width="640" height="480"></iframe>
+</div>
+
+
 ## Interpolation
 to interpolate you run interpolator_casia.py. You may change in main which samples are displayed, size of images and size of grid of images. By default it takes 21st(last) generator from tmp\chinese where generators from different stages of my training are stored.
 
