@@ -2,7 +2,7 @@ import os, sys
 sys.path.append(os.getcwd())
 import torch
 import torch.autograd as autograd
-import gan_cppn_casia_big7 as casia
+import gan_cppn_casia_big as casia
 import numpy as np
 import imageio
 import random
